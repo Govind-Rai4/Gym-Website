@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>Gym Tiger - Services</title>
+</head>
+
+<style>
+
+
+
+    /* nav header */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --primary-color:#111317;
+    --primary-color-light:#1f2125;
+    --primary-color-extra-light:#35373b;
+    --secondray-color:#f9ac54;
+    --secondary-color-dark:#d79447;
+    --text-light:#d1d5db;
+    --white:#ffffff;
+    --max-width: 1200px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section_container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section_header{
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+}
+
+.section_subheader{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.btn{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--secondray-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: var(--secondary-color-dark);
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg_blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px var(--secondray-color);
+    z-index: -1;
+}
+
+body{
+    font-family: "Popines",sans-serif;
+    background-color: var(--primary-color);
+}
+
+nav{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 150px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--white);
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondray-color);
+    transition: 0.3s;
+}
+
+.link a:hover::after{
+    width: 50%;
+}
+   /* ///nav header/// */
+
+/* body */
+
+/* Team Header */
+.team-header {
+            position: sticky;
+            background: url('contact.jpeg') center center/cover no-repeat;
+            height: 350px;
+            /* Default height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 15px;
+            /* Add some padding for better text alignment */
+        }
+
+        .team-header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            /* Dark overlay */
+        }
+
+        .team-header h1 {
+            z-index: 1;
+            font-size: 3.5rem;
+            /* Large font size */
+            font-weight: bold;
+            color: white;
+            margin-top: 20vh;
+            /* Adjusted margin for the header */
+        }
+
+        .team-header p {
+            z-index: 1;
+            font-size: 1.2rem;
+            /* Regular font size */
+        }
+
+        /* Responsive Adjustments */
+
+        /* For tablets and below (max-width: 1200px) */
+        @media (max-width: 1200px) {
+            .team-header h1 {
+                font-size: 3rem;
+                /* Slightly smaller font for larger tablets/small desktops */
+                margin-top: 15vh;
+                /* Adjusted top margin for smaller screens */
+            }
+
+            .team-header p {
+                font-size: 1.1rem;
+                /* Slightly smaller text */
+            }
+        }
+
+        /* For tablets (max-width: 992px) */
+        @media (max-width: 992px) {
+            .team-header {
+                height: 300px;
+                /* Reduce height for medium-sized screens */
+            }
+
+            .team-header h1 {
+                font-size: 2.5rem;
+                /* Smaller font size for tablets */
+                margin-top: 10vh;
+                /* Adjusted margin */
+            }
+
+            .team-header p {
+                font-size: 1rem;
+                /* Smaller font size for better readability */
+            }
+        }
+
+        /* For small tablets / large mobiles (max-width: 768px) */
+        @media (max-width: 768px) {
+            .team-header {
+                height: 250px;
+                /* Further reduced height for small tablets */
+            }
+
+            .team-header h1 {
+                font-size: 2rem;
+                /* Smaller font size for small devices */
+                margin-top: 8vh;
+                /* Reduced margin for small screens */
+            }
+
+            .team-header p {
+                font-size: 0.9rem;
+                /* Smaller font for better readability */
+            }
+        }
+
+        /* For extra small screens / mobile (max-width: 576px) */
+        @media (max-width: 576px) {
+            .team-header {
+                height: 200px;
+                /* Very small height for mobile */
+            }
+
+            .team-header h1 {
+                font-size: 1.5rem;
+                /* Very small font size for mobile screens */
+                margin-top: 5vh;
+                /* Reduced margin for mobile */
+            }
+
+            .team-header p {
+                font-size: 0.85rem;
+                /* Small font size for mobile readability */
+            }
+        }
+
+
+        /* Header Section */
+        .contact-header {
+            background-color: #700F1A;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact-header h2 {
+            margin-bottom: 0;
+            font-size: 2.5rem;
+        }
+
+        .contact-header p {
+            font-size: 1.2rem;
+        }
+
+        /* Form & Contact Info Row */
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .contact-info-container,
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .contact-info-container i {
+            font-size: 1.8rem;
+            color: #700F1A;
+            margin-right: 15px;
+        }
+
+        .contact-info-container h5 {
+            margin-top: 20px;
+            font-size: 1.3rem;
+        }
+
+        .contact-info-container p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .form-container h4 {
+            font-size: 1.5rem;
+            color: black;
+            /* color: #700F1A; */
+        }
+
+        .btn-submit {
+            background-color: var(--secondray-color);
+            color: white;
+        }
+
+        .btn-submit:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* Map Section */
+        .map-container {
+            margin-top: 40px;
+        }
+
+        .map-container .map-heading {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: orange;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            border: 3px solid #700F1A;
+        }
+
+        .follow-icons a i {
+            /* color: #700F1A; */
+            color: orange;
+            transition: color 0.3s;
+        }
+
+        .follow-icons a i:hover {
+            color: black;
+        }
+/* //body// */
+
+       
+       
+
+ /* footer container */
+ .footer_container{
+        position: relative;
+        display: flex;
+        grid-template-columns: 400px repeat(3 1fr);
+        gap: 2rem;
+    }
+
+    .footer_blur{
+        bottom: 0;
+        right: 0;
+    }
+
+    .footer_logo{
+        max-width: 150px;
+        margin-bottom: 2rem;
+    }
+
+    .footer_col p{
+        margin-bottom: 2rem;
+        color: var(--text-light);
+    }
+
+    .footer_socials{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer_socials a{
+        padding: 5px 10px;
+        font-size: 1.25rem;
+        color: var(--secondray-color);
+        border: 1px solid var(--secondray-color);
+        border-radius: 100%;
+        transition: 0.3s;
+    }
+
+    .footer_socials a:hover{
+        color: var(--white);
+        background-color: var(--secondray-color);
+    }
+
+
+    .footer_col h4{
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--white);
+    }
+
+    .footer_col > a {
+        display: block;
+        margin-bottom: 1rem;
+        color: var(--text-light);
+        transition: 0.3s;
+    }
+
+    .footer_col > a:hover {
+        color: var(--secondray-color);
+    }
+
+    .footer_bar {
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 1rem;
+        font-size: 0.8rem;
+        color: var(--white);
+        text-align: center;
+    }
+
+    @media (width < 900px) {
+        .nav_links {
+            display: none;
+        }
+
+        .footer_container{
+            grid-template-columns: 1fr 200px;
+        }
+    }
+
+    @media (width < 600px) {
+
+        .footer_container{
+            grid-template-columns: 1fr 150px;
+        }
+
+        .footer_blur{
+            text-align: center;
+        }
+        
+    }
+ /* ///footer container// */
+</style>
+
+
+
+<body>
+    <!-- nav  -->
+    <nav>
+        <div class="nav-logo">
+            <a href="#"><img src="Tiger__1_-removebg-preview.png" alt="logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">HOME</a></li>
+            <li class="link"><a href="about us.html">ABOUT US</a></li>
+            <li class="link"><a href="service.html">SERVICE</a></li>
+            <li class="link"><a href="gallery.html">GALLERY</a></li>
+            <li class="link"><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <a href="login.html" target="_blank"><button class="btn">Login</button></a>
+    </nav>
+    <!-- //nav// -->
+
+    <!-- body  -->
+
+    <section class="team-header text-white text-center">
+        <div class="overlay">
+            <div class="container" id="overlay-div">
+                <h1>Contact Us</h1>
+                <p>Get in touch with Gym Tiger</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section with Data on Left, Form on Right -->
+    <div class="container contact-section">
+        <div class="row">
+            <!-- Contact Info and Social Links on Left -->
+            <div class="col-lg-6 mb-4">
+                <div class="contact-info-container h-100">
+                    <h4 class="text-center mb-4">Contact Information</h4>
+
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <h5>Our Address</h5>
+                            <p>125 Down Street, Gym City, 1024</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div>
+                            <h5>Call Us</h5>
+                            <p>+123 012 025</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div>
+                            <h5>Email Us</h5>
+                            <p>contact@gymtiger.com</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4" id="follow-us">
+                        <i class="bi bi-share"></i>
+                        <div>
+
+                            <h5>Follow Us</h5><br>
+                            <div class="follow-icons mt-3">
+                                    <!-- <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a> -->
+                                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact Form on Right -->
+            <div class="col-lg-6 mb-4">
+                <div class="form-container h-100">
+                    <h4 class="text-center mb-4">Send Us a Message</h4>
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+123 456 789" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message..."
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps Embed Section -->
+    <div class="container map-container pb-5">
+        <div class="row">
+            <div class="col">
+                <h4 class="map-heading text-center">Find Our Location</h4>
+                <!-- Google Map -->
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5241.235245950553!2d-7.217677396516176!3d53.86500058040376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485de2ac8aa5deff%3A0xa00c7a99731d770!2sCornahilt%2C%20Ballyjamesduff%2C%20Co.%20Cavan%2C%20Ireland!5e0!3m2!1sen!2s!4v1736085262799!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+
+                    <!-- Custom JS for form validation -->
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', function (event) {
+                            const name = document.getElementById('name').value;
+                            const email = document.getElementById('email').value;
+                            const phone = document.getElementById('phone').value;
+                            const message = document.getElementById('message').value;
+
+                            if (!name || !email || !phone || !message) {
+                                alert('Please fill in all fields.');
+                                event.preventDefault();
+                            } else {
+                                alert('Thank you for your message!');
+                                event.preventDefault();
+                                // Reset form fields
+                                document.getElementById('contactForm').reset();
+                            }
+                        });
+                    </script>
+    <!-- ////body// -->
+
+
+    <!-- footer  -->
+    <div class="row">
+    <footer class="section_container footer_container">
+        <span class="bg_blur"></span>
+        <span class="bg_blur footer_blur"></span>
+        <div class="col-sm-3">
+        <div class="footer_col">
+          <div class="footer_logo"><img src="Tiger__1_-removebg-preview.png" alt="logo"></div>
+          <p>
+            Take the first step towards a healthier, stronger
+             you with our unbeatable pricing plans. Let's sweet,
+              achieve, and conquer together!
+          </p>
+          <div class="footer_socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+    </div>
+
+        <div class="col-sm-3">
+        <div class="footer_col">
+            <h4>Company</h4>
+            <a href="#">Business</a>
+            <a href="#">Franchise</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+        </div>
+        </div>
+
+        <div class="col-sm-3">
+        <div class="footer_col">
+            <h4>About Us</h4>
+            <a href="blog.html">Blogs</a>
+            <a href="#">Security</a>
+            <a href="#">Careers</a>
+        </div>
+        </div>
+
+        <div class="col-sm-3">
+        <div class="footer_col">
+            <h4>Contact</h4>
+            <a href="contact.html">Contact us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Teams & conditions</a>
+            <a href="#">BMI Calculator</a>
+        </div>
+        </div>
+    </footer>
+    </div>
+    <div class="footer_bar">
+        Copyright &copy; 2025 - Tiger Gym. All rights reserved.
+    </div>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- //footer// -->
